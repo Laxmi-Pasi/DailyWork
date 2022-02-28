@@ -1,3 +1,9 @@
+<%= #javascript_include_tag "main" 
+%>
+<%= stylesheet_link_tag "main" %>
+<% content_for :head do %>
+  <title>books</title>
+<% end %>
 <h1>Listing Books</h1>
 
 <table>
@@ -24,4 +30,8 @@
 
 <br>
 
-<%= link_to "New book", new_book_path %>
+<%= link_to "New book", new_book_path %><br/>
+<%= image_tag "img1.png", {height: 100, width: 100} %>
+<%= #video_tag "movie.ogg" 
+%>
+

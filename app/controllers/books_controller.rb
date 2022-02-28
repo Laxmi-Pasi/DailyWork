@@ -31,7 +31,7 @@ class BooksController < ApplicationController
     #render formats: :json //errors
     # called in HomeController#index
     #render variants: [:mobile, :desktop]
-    render "page"
+    #render "page"
   end
 
   def show
@@ -61,7 +61,7 @@ class BooksController < ApplicationController
     @id=1
     if @book.update(book_params)
       #render action: :show
-      #redirect_to(@book)
+      redirect_to(@book)
       #render "show"
     else
       #redirect_to edit_book_path(@book)
